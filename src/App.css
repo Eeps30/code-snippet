@@ -33,13 +33,15 @@
 }
 
 .inputFields > button {
+    height: 36px;
     position: relative;
     left: 174px;
-    top: -21px;
+    top: -36px;
 }
 
 .inputFields > label > input {
     width: 420px;
+    height: 30px;
 }
 
 .image {

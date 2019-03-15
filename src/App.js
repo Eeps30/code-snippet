@@ -48,9 +48,10 @@ class App extends Component {
         }
         imagesRef.push(image);
         this.setState({
-            imageTitle: '',
-            imageURL: ''
+            imageTitle: "",
+            imageURL: ""
         })
+        e.target.reset();
     }
 
     render() {
