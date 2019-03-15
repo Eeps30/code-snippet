@@ -57,19 +57,16 @@ class App extends Component {
         return (
             <div className="App">
                 <section className="header">
-                    <form onSubmit={this.handleSubmit}>
+                    <form className="inputFields" onSubmit={this.handleSubmit}>
                         <label>
-                            Title of Image:
-                            <input type="text" name="imageTitle" onChange={this.handleChange}></input>
-                            Image URL:
-                            <input type="text" name="imageUrl" onChange={this.handleChange}></input>
+                            <input type="text" placeholder="Image Title" name="imageTitle" onChange={this.handleChange}></input>
+                            <input type="text" placeholder="Image URL" name="imageUrl" onChange={this.handleChange}></input>
                         </label>
                         <button>Add Image</button>
                     </form>
                 </section>
                 <section>
                     {this.state.images.map((image) => {
-                        console.log('current images in state', this.state.images);
                         return (
                             <div className="image" key={image.id}>
                                 <h3>{image.title}</h3>
